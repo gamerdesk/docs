@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral Responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu lateral -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn">X</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-item" data-content="intro">Introdução</a></li>
+                <li><a href="#" class="menu-item" data-content="config">Configuração</a></li>
+                <li><a href="#" class="menu-item" data-content="api">API</a></li>
+                <li><a href="#" class="menu-item" data-content="support">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="content">
+        <h1>Bem-vindo à Documentação</h1>
+        <div id="intro" class="hidden">
+            <h2>Introdução</h2>
+            <p>Conteúdo sobre introdução...</p>
+        </div>
+        <div id="config" class="hidden">
+            <h2>Configuração</h2>
+            <p>Conteúdo sobre configuração...</p>
+        </div>
+        <div id="api" class="hidden">
+            <h2>API</h2>
+            <p>Conteúdo sobre API...</p>
+        </div>
+        <div id="support" class="hidden">
+            <h2>Suporte</h2>
+            <p>Conteúdo sobre suporte...</p>
+        </div>
+    </div>
+
+    <button class="menu-btn">☰</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
