@@ -1,0 +1,21 @@
+
+/* Estilo para a div pai */
+.div-pai {
+    border: 2px solid #333; /* Borda para a div pai */
+    padding: 20px; /* Espaçamento interno */
+    width: 80vw; /* Largura da div pai ocupando toda a largura da tela */
+    height: 80vh; /* Altura da div pai */
+    background-color: #f0f0f0; /* Cor de fundo */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espaçamento entre as divs filhas */
+    overflow-y: auto; /* Rolagem vertical se necessário */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total da div */
+}
+
+/* Estilo para as divs filhas */
+.div-filha {
+    border: 1px solid #666; /* Borda para as divs filhas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo */
+}

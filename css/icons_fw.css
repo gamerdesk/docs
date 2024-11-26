@@ -1,0 +1,23 @@
+.sidebar-footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones no footer */
+    gap: 20px; /* Adiciona um espaço de 20px entre cada ícone */
+    margin-top: 10px; /* Espaçamento acima dos ícones */
+}
+
+.footer-icon i {
+    color: #fff; /* Cor dos ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.footer-icon:hover i {
+    color: #ddd; /* Cor dos ícones ao passar o mouse */
+}

@@ -1,52 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Lateral Responsivo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Script Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/divslist.css">
+    <link rel="stylesheet" href="./css/icons_fw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
 <body>
-    <!-- Menu lateral -->
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <h2>Menu</h2>
-            <button class="close-btn">X</button>
-        </div>
-        <nav>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-content">
             <ul>
-                <li><a href="#" class="menu-item" data-content="intro">Introdução</a></li>
-                <li><a href="#" class="menu-item" data-content="config">Configuração</a></li>
-                <li><a href="#" class="menu-item" data-content="api">API</a></li>
-                <li><a href="#" class="menu-item" data-content="support">Suporte</a></li>
+                <!-- Adicione novos itens aqui -->
+                <li><a href="#" data-target="home">Início</a></li>
+                <li><a href="#" data-target="gp">Game Panel</a></li>
+                <li><a href="#" data-target="ln">linux</a></li>
+                <li><a href="#" data-target="win">windows</a></li>
+                <!-- Fim da área de novos itens -->
             </ul>
-        </nav>
-    </div>
+        </div>
+        <footer class="sidebar-footer">
+            <p>© 2024 nexigonprime</p>
+            <div class="footer-icons">
+                <a href="#" aria-label="Facebook" class="footer-icon"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="#" aria-label="Twitter" class="footer-icon"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" aria-label="Instagram" class="footer-icon"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" aria-label="LinkedIn" class="footer-icon"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            </div>
+        </footer>
+        
+    </nav>
 
-    <!-- Conteúdo -->
-    <div class="content">
-        <h1>Bem-vindo à Documentação</h1>
-        <div id="intro" class="hidden">
-            <h2>Introdução</h2>
-            <p>Conteúdo sobre introdução...</p>
-        </div>
-        <div id="config" class="hidden">
-            <h2>Configuração</h2>
-            <p>Conteúdo sobre configuração...</p>
-        </div>
-        <div id="api" class="hidden">
-            <h2>API</h2>
-            <p>Conteúdo sobre API...</p>
-        </div>
-        <div id="support" class="hidden">
-            <h2>Suporte</h2>
-            <p>Conteúdo sobre suporte...</p>
-        </div>
-    </div>
+<!-- ================================================================================= -->
 
-    <button class="menu-btn">☰</button>
+    <main>
+        <!-- Adicione novas seções aqui -->
+        <section id="home" class="content active">
+            <h1>Bem-vindo à ScriptPage!</h1>
+            <p>
+                Na ScriptPage, você encontrará uma coleção cuidadosamente selecionada de scripts para Linux e lndows, projetados para tornar suas tarefas de administração de sistemas mais fáceis e eficientes. Nossa missão é fornecer soluções práticas e acessíveis, desde scripts simples até configurações avançadas.
+            </p>
+            <h2>Explore nossos recursos:</h2>
+            <ul>
+                <li>
+                    <strong>Scripts para Linux e lndows:</strong> Encontre scripts que automatizam tarefas diárias, otimizam processos e melhoram a produtividade. Ideal para administradores de sistemas, desenvolvedores e entusiastas de tecnologia.
+                </li>
+                <li>
+                    <strong>Instalação de Painéis de Games:</strong> Descubra scripts de instalação e configuração para painéis de jogos, incluindo o popular Pterodactyl, permitindo que você gerencie seus servidores de jogos com facilidade.
+                </li>
+            </ul>
+            <h2>Por que escolher a ScriptPage?</h2>
+            <p>
+                Na ScriptPage, acreditamos em compartilhar conhecimento e capacitar nossa comunidade com ferramentas que simplificam a vida digital. Todos os nossos scripts são testados e verificados, garantindo que você tenha acesso a soluções seguras e eficientes.
+            </p>
+            <p>
+                Explore nossa página inicial e descubra o poder dos scripts na automação e otimização do seu ambiente digital. Seja você um iniciante ou um profissional experiente, a ScriptPage é o seu destino para scripts de qualidade.
+            </p>
+            <p>
+                <h2>OBS: tudo que está aqui pode ter alteraçoes futuras então não espere muito de um site de ajuda em faze de testes </h2>
+            </p>
+        </section>
 
-    <script src="script.js"></script>
+<!-- ================================================================================= -->
+    
+        <section id="gp" class="content">
+            <div class="div-pai">
+                <div class="div-filha">Filha 1</div>
+                <div class="div-filha">Filha 2</div>
+                <div class="div-filha">Filha 3</div>
+                <!-- Você pode adicionar mais divs filhas aqui -->
+            </div>
+        </section>
+
+<!-- ================================================================================= -->
+
+        <section id="ln" class="content">
+            <div class="div-pai">
+                <div class="div-filha">Filha 1</div>
+                <div class="div-filha">Filha 2</div>
+                <div class="div-filha">Filha 3</div>
+                <!-- Você pode adicionar mais divs filhas aqui -->
+            </div>
+        </section>
+
+<!-- ================================================================================= -->
+
+        <section id="win" class="content">
+            <div class="div-pai">
+                <div class="div-filha">Filha 1</div>
+                <div class="div-filha">Filha 2</div>
+                <div class="div-filha">Filha 3</div>
+                <!-- Você pode adicionar mais divs filhas aqui -->
+            </div>
+        </section>
+        <!-- Fim da área de novas seções -->
+    </main>
+
+<!-- ================================================================================= -->
+
+    <script src="./js/script.js"></script>
+    <script src="./js/divslist.js"></script>
 </body>
 </html>

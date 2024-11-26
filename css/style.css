@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa a altura mínima da tela */
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-content {
+    flex: 1; /* Ocupa todo o espaço disponível acima do footer */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo for maior que a altura da tela */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.sidebar-footer {
+    padding: 10px;
+    background-color: #444; /* Cor de fundo do footer */
+    border-top: 1px solid #555; /* Borda superior */
+    text-align: center;
+}
+
+.sidebar-footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+}
+
+section {
+    display: none;
+    margin-bottom: 20px;
+}
+
+section.active {
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto; /* Ajusta a altura para caber o conteúdo */
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+h1 {
+    color: #2c3e50;
+}
+h2 {
+    color: #16a085;
+}
+p {
+    margin-bottom: 15px;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
